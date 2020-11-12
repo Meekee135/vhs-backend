@@ -13,7 +13,7 @@ module.exports = {
     rootDir: 'src',
     testRegex: '.spec.ts$',
     testEnvironment: 'node',
-    coverageDirectory: '../coverage',
+    coverageDirectory: './coverage',
     collectCoverageFrom: ['**/services/**/*.ts', '!**/*.d.ts', '!**/domain/**', '!**/__test__/**'],
     collectCoverage: true,
 };

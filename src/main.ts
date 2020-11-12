@@ -1,3 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const tsConfig = require('../tsconfig.json');
+import { register } from 'tsconfig-paths';
+
+register({
+    baseUrl: './dist',
+    paths: tsConfig.compilerOptions.paths,
+});
+
 import { ValidationPipe } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';

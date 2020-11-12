@@ -12,8 +12,14 @@
         "baseUrl": "./src",
         "incremental": true,
         "strict": true,
-        "strictPropertyInitialization": false
+        "strictPropertyInitialization": false,
+        "paths": {
+            "config": ["config"],
+            "database/*": ["database/*"],
+            "gateway/*": ["gateway/*"],
+            "services/*": ["services/*"]
+        }
     },
-    "include": ["./src"],
+    "include": ["./src/**/*"],
     "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }
