@@ -1,5 +1,6 @@
 # VHS Backend
 
+This demo purpose application is used to create movies and corresponding comments.
 This page only has information related to project development.
 
 # Operations
